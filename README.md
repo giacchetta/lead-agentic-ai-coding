@@ -38,7 +38,7 @@ flowchart TD
 | :--- | :--- | :--- |
 | 🛡️ **`guardrails/`** | **Non-Negotiables** | Prevent secret leaks, destructive CLI commands, and unauthorized `.env` edits. |
 | 🎯 **`core/`** | **Quality Standards** | Enforce SOLID/DRY principles, strict typing, linting, and token efficiency. |
-| 📋 **`protocols/`** | **Maintenance Rules** | Dictate *when* agents must update `AGENTS.md` and keep `README.md` visual. |
+| 📋 **`protocols/`** | **Maintenance Rules** | Dictate *when* agents must update `AGENTS.md`, keep `README.md` visual, and keep multi-issue PR scope honest. |
 | 🎭 **`roles/`** | **Personas** | Behavioral prompts for System Architect and Code Reviewer tasks. |
 | 📐 **`schemas/`** | **Structured Outputs** | JSON schemas for standardizing PR summaries and architecture logs. |
 

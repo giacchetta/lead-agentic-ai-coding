@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PRScope",
+  "type": "object",
+  "properties": {
+    "epic": { "type": ["integer", "null"] },
+    "basePr": { "type": ["integer", "null"] },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "number": { "type": "integer" },
+          "title": { "type": "string" },
+          "inDiff": { "type": "boolean" },
+          "done": { "type": "boolean" }
+        },
+        "required": ["number", "title", "inDiff", "done"]
+      }
+    }
+  },
+  "required": ["issues"]
+}

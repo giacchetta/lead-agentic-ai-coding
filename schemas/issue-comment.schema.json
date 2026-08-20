@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IssuePRComment",
+  "type": "object",
+  "properties": {
+    "issue": { "type": "integer" },
+    "pr": { "type": "integer" },
+    "commits": { "type": "array", "items": { "type": "string" } },
+    "whatLanded": { "type": "array", "items": { "type": "string" } },
+    "decisions": { "type": "array", "items": { "type": "string" } },
+    "verification": { "type": "array", "items": { "type": "string" } },
+    "acceptanceCriteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "done": { "type": "boolean" }
+        },
+        "required": ["text", "done"]
+      }
+    }
+  },
+  "required": ["issue", "pr", "commits", "whatLanded", "acceptanceCriteria"]
+}
